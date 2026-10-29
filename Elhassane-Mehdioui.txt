@@ -1,0 +1,5 @@
+Pourquoi ça arrive ?
+origin/feature/livraison est juste un marqueur en lecture seule, pas une vraie branche locale. Donc git switch refuse, et git checkout nous met en detached HEAD (on n’est sur aucune branche).
+
+Le risque en commitant
+Nos commits ne sont rattachés à aucune branche. Dès qu’on change de branche, ils deviennent orphelins et peuvent être supprimés par Git : on peut perdre notre travail.
