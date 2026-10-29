@@ -1,0 +1,15 @@
+Pour publier notre travail sur le fork de l'équipe,
+ on a d'abord vérifié qu'on était bien sur la bonne branche et
+  que nos modifications étaient bien enregistrées localement.
+   Ensuite, on a ajouté les fichiers modifiés à la zone de staging 
+   avec git add, puis on a créé un commit clair et descriptif qui 
+   explique ce qu'on a changé et pourquoi. Une fois le commit prêt,
+    on a poussé la branche vers le dépôt distant origin 
+    (le fork de Membre 1) avec git push. Pour une branche 
+    qui n'existe pas encore sur le serveur, on a utilisé 
+    git push -u origin <branche> afin de créer la branche distante
+     et lier la branche locale à sa branche de suivi. Enfin, 
+     on a vérifié sur GitHub que le commit apparaissait bien et 
+     que la branche était visible, ce qui confirme que
+      toute l'équipe peut désormais récupérer le travail 
+      avec un simple git pull. 
