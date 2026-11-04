@@ -2,7 +2,7 @@
 // Les prix sont en dirhams (MAD).
 const products = [
   {
-    id: 1,
+    id: 11,
     name: "Tajine décoré de Safi",
     category: "Poterie",
     price: 250,
@@ -10,7 +10,7 @@ const products = [
     description: "Tajine en terre cuite peint à la main, motifs traditionnels bleus."
   },
   {
-    id: 2,
+    id: 22,
     name: "Tapis berbère du Moyen Atlas",
     category: "Tissage",
     price: 1800,
@@ -18,7 +18,7 @@ const products = [
     description: "Tapis en laine naturelle, tissé à la main, 120 x 180 cm."
   },
   {
-    id: 3,
+    id: 33,
     name: "Babouches en cuir de Fès",
     category: "Maroquinerie",
     price: 180,
@@ -26,7 +26,7 @@ const products = [
     description: "Babouches en cuir tanné végétalement, cousues main."
   },
   {
-    id: 4,
+    id: 44,
     name: "Lanterne en cuivre ciselé",
     category: "Dinanderie",
     price: 420,
@@ -34,7 +34,7 @@ const products = [
     description: "Lanterne en cuivre ajouré, projette des motifs de lumière."
   },
   {
-    id: 5,
+    id: 55,
     name: "Coffret en bois de thuya",
     category: "Ébénisterie",
     price: 320,
@@ -42,7 +42,7 @@ const products = [
     description: "Coffret marqueté en bois de thuya d'Essaouira."
   },
   {
-    id: 6,
+    id: 66,
     name: "Savon noir à l'eucalyptus",
     category: "Cosmétique",
     price: 45,
@@ -50,15 +50,15 @@ const products = [
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
   },
   {
-    id: 10 ,
+    id: 100 ,
     name: "Tajine décoré de Safi",
     category: "Poterie",
     price: 190,
     stock: 6,
     description: "Tajine en terre cuite peint à la main, motifs traditionnels bleus."
-  }, 
-  {
-id: 7,
+  }
+ , {
+id: 77,
 name: "Plateau en zellige de Fès",
 category: "Poterie",
 price: 280,
@@ -66,7 +66,15 @@ stock: 4,
 description: "Plateau en zellige de Fès, livré non rembourré."
 },
 {
-id: 8,
+id: 88,
+name: "pc de Fès",
+category: "Poterie",
+price: 20,
+stock: 400,
+description: "Plateau en zellige de Fès, livré non rembourré."
+},
+{
+id: 22,
 name: "pc de Fès",
 category: "Poterie",
 price: 20,
@@ -83,7 +91,7 @@ description: "Plateau en zellige de Fès, livré non rembourré."
 }
 ,
 {
-id: "lamiae",
+id: "lamiae1",
 name: "pc de Fès",
 category: "Poterie",
 price: 20,
@@ -92,7 +100,7 @@ description: "Plateau en zellige de Fès, livré non rembourré."
 }
 ,
 {
-id: 33,
+id: 333,
 name: "pc de Fès",
 category: "Poterie",
 price: 20,
