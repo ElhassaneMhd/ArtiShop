@@ -48,6 +48,14 @@ const products = [
     price: 45,
     stock: 50,
     description: "Savon noir traditionnel à l'huile d'olive et à l'eucalyptus."
+  },
+  {
+    id: 10 ,
+    name: "Tajine décoré de Safi",
+    category: "Poterie",
+    price: 190,
+    stock: 6,
+    description: "Tajine en terre cuite peint à la main, motifs traditionnels bleus."
   }
  , {
 id: 7,
