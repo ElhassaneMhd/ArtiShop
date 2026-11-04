@@ -56,8 +56,8 @@ const products = [
     price: 190,
     stock: 6,
     description: "Tajine en terre cuite peint à la main, motifs traditionnels bleus."
-  }
- , {
+  }, 
+  {
 id: 7,
 name: "Plateau en zellige de Fès",
 category: "Poterie",
@@ -67,6 +67,14 @@ description: "Plateau en zellige de Fès, livré non rembourré."
 },
 {
 id: 8,
+name: "pc de Fès",
+category: "Poterie",
+price: 20,
+stock: 400,
+description: "Plateau en zellige de Fès, livré non rembourré."
+},
+{
+id: 55,
 name: "pc de Fès",
 category: "Poterie",
 price: 20,
