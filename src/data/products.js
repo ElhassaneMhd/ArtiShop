@@ -72,6 +72,14 @@ category: "Poterie",
 price: 20,
 stock: 400,
 description: "Plateau en zellige de Fès, livré non rembourré."
+},
+{
+id: 22,
+name: "pc de Fès",
+category: "Poterie",
+price: 20,
+stock: 400,
+description: "Plateau en zellige de Fès, livré non rembourré."
 }
 ,
 {
