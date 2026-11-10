@@ -58,7 +58,7 @@ const products = [
     description: "Babouches en cuir brodées à la main."
   },
   {
-    id: 7,
+    id: 8,
     name: "Pouf en cuir de Marrakech",
     category: "Maroquinerie",
     price: 350,
@@ -66,12 +66,20 @@ const products = [
     description: "Pouf rond en cuir brodé à la main, livré non rembourré."
      },
   {
-     id: 7,
+     id: 9,
     name: "Plateau en zellige de Fès",
     category: "Poterie",
     price: 280,
     stock: 4,
     description: "Plateau décoré de zellige fait main."
+  },
+  {
+    id :10,
+    name: "Tajine décoré de Safi",
+    category: "Poterie",
+    price: 190,
+    stock: 10,
+    description: "Tajine en terre cuite décoré à la main."
   }
 ];
 
