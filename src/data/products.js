@@ -64,6 +64,14 @@ const products = [
     price: 350,
     stock: 6,
     description: "Pouf rond en cuir brodé à la main, livré non rembourré."
+     },
+  {
+     id: 7,
+    name: "Plateau en zellige de Fès",
+    category: "Poterie",
+    price: 280,
+    stock: 4,
+    description: "Plateau décoré de zellige fait main."
   }
 ];
 
