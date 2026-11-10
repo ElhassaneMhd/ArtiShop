@@ -8,7 +8,7 @@ const promoCodes = require("./data/promos");
 function createApp() {
   const app = express();
   const cart = new Map(); // productId -> quantity
-const appliedCodes = [];
+  const appliedCodes = [];
 
   app.use(express.json());
   app.use(express.static(path.join(__dirname, "..", "public")));
@@ -17,7 +17,8 @@ const appliedCodes = [];
   app.get("/health", (req, res) => {
     res.json({ status: "ok" });
   });
-	  // Frais de livraison : /api/delivery?city=Rabat
+
+  // Frais de livraison : /api/delivery?city=Rabat
   const deliveryFees = require("./data/delivery");
   app.get("/api/delivery", (req, res) => {
     const fee = deliveryFees[req.query.city];
@@ -26,7 +27,6 @@ const appliedCodes = [];
     }
     res.json({ city: req.query.city, fee });
   });
-
 
   // Catalogue, avec filtre optionnel par catégorie : /api/products?category=Poterie
   app.get("/api/products", (req, res) => {
@@ -101,14 +101,14 @@ const appliedCodes = [];
   });
 
   // Appliquer un code promo : { "code": "RAMADAN20" }
-    app.post("/api/cart/promo", (req, res) => {
+  app.post("/api/cart/promo", (req, res) => {
     const code = String(req.body.code || "").toUpperCase();
     if (promoCodes[code] === undefined) {
-    return res.status(400).json({ error: "Code promo invalide" });
+      return res.status(400).json({ error: "Code promo invalide" });
     }
     appliedCodes.push(code);
     res.json(cartSummary());
-    });
+  });
 
   return app;
 }
