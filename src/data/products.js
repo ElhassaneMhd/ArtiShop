@@ -56,6 +56,14 @@ const products = [
     price: 220,
     stock: 12,
     description: "Babouches en cuir brodées à la main."
+  },
+  {
+    id: 7,
+    name: "Pouf en cuir de Marrakech",
+    category: "Maroquinerie",
+    price: 350,
+    stock: 6,
+    description: "Pouf rond en cuir brodé à la main, livré non rembourré."
   }
 ];
 
