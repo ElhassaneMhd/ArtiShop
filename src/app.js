@@ -36,6 +36,11 @@ function createApp() {
       : products;
     res.json(result);
   });
+  // Liste des catégories : /api/categories
+  app.get("/api/categories", (req, res) => {
+    const categories = [...new Set(products.map((p) => p.category))];
+    res.json(categories);
+  });
 
   // Fiche produit
   app.get("/api/products/:id", (req, res) => {
