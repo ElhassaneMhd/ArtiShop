@@ -42,7 +42,7 @@ function createApp() {
   // Recherche : /api/products/search?q=tapis
   app.get("/api/products/search", (req, res) => {
     const q = (req.query.q || "").toLowerCase();
-    res.json(products.filter((p) => p.name.toLowerCase().includes(q)));
+        res.json(products.filter((p) => (p.name + " " + p.category).toLowerCase().includes(q)));
   });
 
   // Fiche produit
