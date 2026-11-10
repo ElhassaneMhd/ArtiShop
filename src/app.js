@@ -38,6 +38,11 @@ function createApp() {
       : products;
     res.json(result);
   });
+  // Liste des catégories : /api/categories
+  app.get("/api/categories", (req, res) => {
+    const categories = [...new Set(products.map((p) => p.category))];
+        res.json(categories.sort((a, b) => a.localeCompare(b, "fr")));
+  });
 
   // Recherche : /api/products/search?q=tapis
   app.get("/api/products/search", (req, res) => {
