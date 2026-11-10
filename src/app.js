@@ -32,9 +32,17 @@ function createApp() {
   app.get("/api/products", (req, res) => {
     const { category } = req.query;
     const result = category
-      ? products.filter((p) => p.category.toLowerCase() === String(category).toLowerCase())
+      ? products.filter(
+          (p) => p.category.toLowerCase() === String(category).toLowerCase(),
+        )
       : products;
     res.json(result);
+  });
+
+  // Recherche : /api/products/search?q=tapis
+  app.get("/api/products/search", (req, res) => {
+    const q = (req.query.q || "").toLowerCase();
+        res.json(products.filter((p) => (p.name + " " + p.category).toLowerCase().includes(q)));
   });
 
   // Fiche produit
@@ -55,13 +63,18 @@ function createApp() {
         name: product.name,
         unitPrice: product.price,
         quantity,
-        subtotal: product.price * quantity
+        subtotal: product.price * quantity,
       };
     });
     const subtotal = items.reduce((sum, item) => sum + item.subtotal, 0);
     let total = subtotal;
     for (const code of appliedCodes) total = total * (1 - promoCodes[code]);
-    return { items, subtotal, codes: appliedCodes, total: Math.round(total * 100) / 100 };
+    return {
+      items,
+      subtotal,
+      codes: appliedCodes,
+      total: Math.round(total * 100) / 100,
+    };
   }
 
   app.get("/api/cart", (req, res) => {
@@ -71,14 +84,17 @@ function createApp() {
   // Ajouter un produit au panier : { "productId": 1, "quantity": 2 }
   app.post("/api/cart", (req, res) => {
     const productId = Number(req.body.productId);
-    const quantity = req.body.quantity === undefined ? 1 : Number(req.body.quantity);
+    const quantity =
+      req.body.quantity === undefined ? 1 : Number(req.body.quantity);
 
     const product = products.find((p) => p.id === productId);
     if (!product) {
       return res.status(404).json({ error: "Produit introuvable" });
     }
     if (!Number.isInteger(quantity) || quantity < 1) {
-      return res.status(400).json({ error: "La quantité doit être un entier positif" });
+      return res
+        .status(400)
+        .json({ error: "La quantité doit être un entier positif" });
     }
 
     const newQuantity = (cart.get(productId) || 0) + quantity;
@@ -94,7 +110,9 @@ function createApp() {
   app.delete("/api/cart/:productId", (req, res) => {
     const productId = Number(req.params.productId);
     if (!cart.has(productId)) {
-      return res.status(404).json({ error: "Ce produit n'est pas dans le panier" });
+      return res
+        .status(404)
+        .json({ error: "Ce produit n'est pas dans le panier" });
     }
     cart.delete(productId);
     res.json(cartSummary());
