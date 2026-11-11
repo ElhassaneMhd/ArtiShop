@@ -1,0 +1,73 @@
+*   e52e63c (HEAD -> develop, origin/develop) merge release/1.1 into develop
+|\  
+| | *   83870cf (tag: v1.1.0, origin/main, origin/HEAD, main) release 1.1.0
+| | |\  
+| | |/  
+| |/|   
+| * | 36886d5 chore: bump version to 1.1.0
+|/ /  
+* |   93776ab merge: keep both promo codes
+|\ \  
+| * \   0346656 merge feature/black-friday
+| |\ \  
+| | * | aff8634 feat(promo): BLACKFRIDAY30
+| |/ /  
+* | |   6c26eae merge feature/eid
+|\ \ \  
+| |/ /  
+|/| |   
+| * | 594c75a feat(promo): EID15
+|/ /  
+* |   7656263 merge hotfix/ramadan20 into develop
+|\ \  
+| | * 755dc03 (tag: v1.0.1) merge hotfix/ramadan20
+| |/| 
+|/|/  
+| * c949174 (origin/hotfix/ramadan20) fix: prevent RAMADAN20 applied twice
+|/  
+*   7036619 Merge pull request #2 from ElhassaneMhd/feature/categories
+|\  
+| * 5f6852b (origin/feature/categories) fix: sort categories
+| * dfad3b1 feat(api): categories list
+* |   012597f Merge pull request #1 from ElhassaneMhd/feature/search
+|\ \  
+| |/  
+|/|   
+| * f636bd3 (origin/feature/search) fix: search on category too
+| * 69400c2 feat(api): product search
+|/  
+* dda1d97 feat(product): add <produit>
+* 1a65418 feat(product): add <produit>
+* 8f331b9 feat(product): add Pouf
+* 22587b4 feat(product): add product belgha
+* adde127 chore: clean slate for tp2 (6 products, delivery, promo, tests green)
+*   9122e68 merge feature/livraison
+|\  
+| * 5333466 (origin/feature/livraison, feature/livraison) feat(livraison): frais de livraison par ville
+* | 9ea644b feat(product) : redo add product step
+* |   75859f1 Merge branch 'main' of https://github.com/ElhassaneMhd/ArtiShop
+|\ \  
+| * \   412a03a Merge branch 'main' of https://github.com/ElhassaneMhd/ArtiShop
+| |\ \  
+| | * | 5283267 add walid product
+| * | | d114088 new id
+| |/ /  
+* / / 294ecde ajout du produit 55
+|/ /  
+* | 682b870 lamiae
+* | a448ab6 new produit
+* | bff34ee ajouter de produit par karim
+* | 64c6013 feat(product) : add new product tajine
+* | 1bf3e2c fichier ajouter
+* | 793583e add Walid reponse
+* | fd89d61 Answer(Ex 4):  explication de  l'erreur  (detached HEAD)
+* | c4db715 karim filali repons
+* | 4c868dc karim filali reponse
+* | b835f9c (origin/feature/promo, feature/promo) feat(promo): codes promo BIENVENUE10 et RAMADAN20
+* | acefc46 add QA seciton
+* | c923300 ReadMe Update
+|/  
+*   c0e265d Fusion avec le dépôt GitHub initial
+|\  
+| * 865adb5 Initial commit
+* add0021 premier commit Artishop
