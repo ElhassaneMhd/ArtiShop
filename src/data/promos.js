@@ -2,7 +2,8 @@
 const PROMO_CODES = {
   BIENVENUE10: 0.10,
   RAMADAN20: 0.20,
-  EID15: 0.15
+  EID15: 0.15,
+  BLACKFRIDAY30: 0.30
 };
 
 module.exports = PROMO_CODES;
